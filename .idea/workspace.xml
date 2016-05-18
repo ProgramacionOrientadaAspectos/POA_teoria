@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02dc9c6b-f865-4b77-9fe2-d97247093a0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/sincro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/trans2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pages/aplicaciones.html" afterPath="$PROJECT_DIR$/Pages/aplicaciones.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pages/lenguajes.html" afterPath="$PROJECT_DIR$/Pages/lenguajes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="POA_teoria.iws" />
@@ -31,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="42.25" vertical-offset="1299" max-vertical-offset="1299">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.80662984" vertical-offset="927" max-vertical-offset="1680">
+              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -61,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aplicaciones.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aplicaciones.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pages/aplicaciones.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44751382" vertical-offset="237" max-vertical-offset="1815">
+            <state vertical-scroll-proportion="33.0" vertical-offset="1272" max-vertical-offset="1815">
               <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
               <folding />
             </state>
@@ -89,9 +86,9 @@
         <option value="$PROJECT_DIR$/Pages/evolucion.html" />
         <option value="$PROJECT_DIR$/Pages/ventajasydesventajas.html" />
         <option value="$PROJECT_DIR$/stylesheets/stylesheet.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Pages/lenguajes.html" />
         <option value="$PROJECT_DIR$/Pages/aplicaciones.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -508,7 +505,7 @@
       <workItem from="1463545133384" duration="974000" />
       <workItem from="1463546534556" duration="2843000" />
       <workItem from="1463599406734" duration="1422000" />
-      <workItem from="1463603140569" duration="4194000" />
+      <workItem from="1463603140569" duration="4620000" />
     </task>
     <task id="LOCAL-00001" summary="index">
       <created>1463543496203</created>
@@ -594,11 +591,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463607853420</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="estilos">
+      <created>1463608451974</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1463608451974</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10897000" />
+    <option name="totallyTimeSpent" value="11323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="677" extended-state="6" />
@@ -746,6 +749,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4695" max-vertical-offset="6450">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -753,6 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1323" max-vertical-offset="1950">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -822,6 +827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.147139" vertical-offset="218" max-vertical-offset="1950">
           <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,6 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.973684" vertical-offset="6070" max-vertical-offset="6450">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -869,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="42.25" vertical-offset="1299" max-vertical-offset="1299">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/lenguajes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625" vertical-offset="690" max-vertical-offset="4245">
@@ -887,8 +886,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pages/aplicaciones.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44751382" vertical-offset="237" max-vertical-offset="1815">
+        <state vertical-scroll-proportion="33.0" vertical-offset="1272" max-vertical-offset="1815">
           <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80662984" vertical-offset="927" max-vertical-offset="1680">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
           <folding />
         </state>
       </provider>
