@@ -1,6 +1,6 @@
 {
   "name": "Programacion Orientada a Aspectos",
   "tagline": "",
-  "body": "# PROGRAMACIÓN ORIENTADA A ASPECTOS.\r\n\r\n\r\n\r\n## CONCEPTOS CLAVES\r\n\r\n###  **ASPECTO(Aspect):**  \r\n“Un aspecto es una **unidad modular que se disemina por la estructura de otras unidades funcionales.** Un aspecto de diseño es una unidad modular del diseño que se entremezcla en la estructura de otras partes del diseño. (G. Kiczales).“\r\n\r\n![](https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/Aspecto.png?raw=true)\r\n",
+  "body": "# PROGRAMACIÓN ORIENTADA A ASPECTOS.\r\n\r\n\r\n\r\n## CONCEPTOS CLAVES\r\n\r\n###  **ASPECTO(Aspect):**  \r\n“Un aspecto es una **unidad modular que se disemina por la estructura de otras unidades funcionales.** Un aspecto de diseño es una unidad modular del diseño que se entremezcla en la estructura de otras partes del diseño. (G. Kiczales).“\r\n\r\n![](https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/Aspecto.png?raw=true)\r\n\r\n\r\n###   **PUNTO DE UNIÓN/ENLACE(Joint point):** \r\nPunto de ejecución dentro del sistema donde un aspecto puede ser conectado:\r\n* Llamada a un método\r\n* Lanzamiento de una excepción\r\n* Modificación de un campo.\r\n\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
