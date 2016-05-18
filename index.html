@@ -1,25 +1,42 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Programacion Orientada a Aspectos by japrietov</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Programacion Orientada a Aspectos</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/japrietov/POA_teoria-1" class="btn">View on GitHub</a>
-      <a href="https://github.com/japrietov/POA_teoria-1/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/japrietov/POA_teoria-1/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <section class="main-content">
-      <h1>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Programacion Orientada a Aspectos</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Programacion Orientada a Aspectos</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/japrietov/POA_teoria-1/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/japrietov/POA_teoria-1/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/japrietov/POA_teoria-1" class="code">View Programacion Orientada a Aspectos on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
 <a id="programaciÓn-orientada-a-aspectos" class="anchor" href="#programaci%C3%93n-orientada-a-aspectos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PROGRAMACIÓN ORIENTADA A ASPECTOS.</h1>
 
 <h2>
@@ -169,7 +186,7 @@ Dentro de ellos podemos encontrar:</p>
 
 <p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/scattering_tangling.png?raw=true" alt=""></p>
 
-<p><em>Se entiende como <strong>Código Mezclado</strong> como que en un mismo módulo de un sistema de software puedan simultáneamente convivir más de un requerimiento. Esta múltiple existencia de requerimientos lleva a la presencia conjunta de elementos de implementación de más de un requerimiento, resultando en un Código Mezclado.</em></p>
+<p><em>Se entiende como <strong>Código Mezclado</strong> como en un mismo módulo de un sistema de software puedan simultáneamente convivir más de un requerimiento. Esta múltiple existencia de requerimientos lleva a la presencia conjunta de elementos de implementación de más de un requerimiento, resultando en un Código Mezclado.</em></p>
 
 <p><em>El <strong>Código Diseminado</strong> se refiere a como los requerimientos están esparcidos sobre varios módulos, la implementación resultante también queda diseminada sobre esos módulos.</em></p>
 
@@ -202,14 +219,39 @@ Dentro de ellos podemos encontrar:</p>
 <a id="desventajas" class="anchor" href="#desventajas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>DESVENTAJAS</strong>
 </h3>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/japrietov/POA_teoria-1">Programacion Orientada a Aspectos</a> is maintained by <a href="https://github.com/japrietov">japrietov</a>.</span>
+<ul>
+<li><p><strong>Posibles choques entre el código funcional (expresado en el lenguaje componente) y el código de aspectos (expresados en los lenguajes de aspectos):</strong> Usualmente estos choques nacen de la necesidad de violar el encapsulamiento para implementar los diferentes aspectos, sabiendo de antemano el riesgo potencial que se corre al utilizar estas prácticas.</p></li>
+<li><p><strong>Posibles choques entre los aspectos:</strong> El ejemplo clásico es tener dos aspectos que trabajan perfectamente por separado pero al aplicarlos conjuntamente resultan en un comportamiento anormal. </p></li>
+</ul>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/choque.png?raw=true" alt=""></p>
 
-    </section>
+<ul>
+<li>
+<strong>Posibles choques entre el código de aspectos y los mecanismos del lenguaje:</strong> Uno de los ejemplos más conocidos de este problema es la anomalía de herencia. Dentro del contexto de la POA, el término puede ser usado para indicar la dificultad de heredar el código de un aspecto en la presencia de herencia.</li>
+</ul>
+
+<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/herencia.png?raw=true" alt=""></p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/japrietov" class="avatar"><img src="https://avatars3.githubusercontent.com/u/14115815?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/japrietov">japrietov</a> maintains <a href="https://github.com/japrietov/POA_teoria-1">Programacion Orientada a Aspectos</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/japrietov/POA_teoria-1/tarball/master" class="tar">tar</a><a href="https://github.com/japrietov/POA_teoria-1/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
   
-  </body>
+</body>
 </html>
