@@ -27,205 +27,50 @@
       <h1>
 <a id="programaciÓn-orientada-a-aspectos" class="anchor" href="#programaci%C3%93n-orientada-a-aspectos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PROGRAMACIÓN ORIENTADA A ASPECTOS.</h1>
 
-<h2>
-<a id="conceptos-claves" class="anchor" href="#conceptos-claves" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CONCEPTOS CLAVES</h2>
+      <h1>
+<a id="introducción" class="anchor" href="#introducci%C3%B3n" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introducción.</h1>
 
-<h3>
-<a id="aspectoaspect" class="anchor" href="#aspectoaspect" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>ASPECTO(Aspect):</strong>
-</h3>
+<p>A lo largo de la historia de la ingeniería de software se ha pasado por ciertas "etapas" en las que se hace uso de un concepto básico de la programación e incluso la vida diaria, dividir una gran tarea en pequeñas tareas manejables es mucho más sencillo que intentar realizar el todo, "<em>divide y vencerás</em>". En un inicio se tenía el código sin división alguna, datos y funcionalidades estaban mezcladas por todo el código, a esta etapa se le llama la generación del código "espaghetti":</p>
 
-<p>“Un aspecto es una <strong>unidad modular que se disemina por la estructura de otras unidades funcionales.</strong> Un aspecto de diseño es una unidad modular del diseño que se entremezcla en la estructura de otras partes del diseño. (G. Kiczales).“</p>
+<p><img src="https://raw.githubusercontent.com/anfmorenoso/Archivos/master/Spag.jpg" alt=""></p>
 
-<p><img src="https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/Aspecto.png?raw=true" alt=""></p>
+<p>Las formas tienen la función de representar los datos y los colores representan la funcionalidad, de ésta manera la imagen ilustra a lo que le llamamos el código "espaghetti".</p>
 
-<h3>
-<a id="punto-de-uniÓnenlacejoint-point" class="anchor" href="#punto-de-uni%C3%93nenlacejoint-point" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>PUNTO DE UNIÓN/ENLACE(Joint point):</strong>
-</h3>
+<p>Luego de ésta generación de caos en el código llegó el primer gran paso en el uso del concepto "<em>divide y vencerás</em>". Los desarrolladores comenzaron a identificar las partes más manejables del código y lo expresaron como funciones definidas dentro del dominio del problema:</p>
 
-<p>Punto de ejecución dentro del sistema donde un aspecto puede ser conectado:</p>
+<p><img src="https://raw.githubusercontent.com/anfmorenoso/Archivos/master/Func.jpg" alt=""></p>
 
-<ul>
-<li>Llamada a un método</li>
-<li>Lanzamiento de una excepción</li>
-<li>Modificación de un campo.</li>
-</ul>
+<p>De ésta manera se consiguió encapsular de cierta manera las funcionalidades y haciendo que el incluir una nueva función fuera mucho mas sencillo, no obstante todavía existían inconvenientes ya que la claridad de las funciones era pobre debido a la utilización de datos compartidos, por otro lado el agregar un nuevo tipo de dato se convertía en una tarea de modificar cuanta función estuviera involucrada con el nuevo dato.</p>
 
-<p><img src="https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/Joinpoints.png?raw=true" alt=""></p>
+<p>Finalmente, en un intento por solucionar los problemas que dejaban los datos esparcidos por todo el código, nace la <a href="http://ferestrepoca.github.io/paradigmas-de-programacion/poo/index.html">Programación Orientada a Objetos</a>, la cual supuso un gran avance que es visible hasta el día de hoy siendo éste uno de los paradigmas de programación más importantes y usados de los últimos años. Su descomposición en objetos es mucho más acertada en el entorno real que la descomposición funcional.</p>
 
-<h3>
-<a id="consejoadvice" class="anchor" href="#consejoadvice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>CONSEJO(Advice):</strong>
-</h3>
+<p><img src="https://raw.githubusercontent.com/anfmorenoso/Archivos/master/obj.jpg" alt=""></p>
 
-<p>Es la implementación del aspecto, es decir, contiene el <strong>código que implementa la nueva funcionalidad</strong>. Se insertan en la aplicación en los Puntos de unión.
-Dentro de ellos podemos encontrar:</p>
+<p>Aunque la <em>programación orientada a objetos</em> es un paradigma de programación que resuelve bastantes problemas de la programación tradicional como el integrar nuevos datos, no es perfecta y posee innumerables problemas dado a que las funciones continúan esparcidas por todo el código y para agregar una función nueva es necesario revisar y modificar objetos.</p>
 
-<ul>
-<li>
-<strong>before</strong> : justo antes de proceder al joint-point (ej: justo antes de entrar al getter, o al constructor, etc)</li>
-<li>
-<strong>after returning</strong>: justo después del return de un método.</li>
-<li>
-<strong>after throwing</strong>: justo después de que lanza una exception.</li>
-<li>
-<strong>after</strong>: al salir de un método, sin importar si fue por exception o por flujo normal (return)</li>
-<li>
-<strong>around</strong>: cuando el flujo llega a ejecutar el join-point, permite que nuestra lógica pueda determinar si proceder o no.</li>
-</ul>
+<p>Además, el diseño e ingeniería de software no se trata simplemente de tratar las funcionalidades básicas del problema, existen muchos otros conceptos que en la descomposición funcional y en la programación orientada a objetos son aproximados de manera poco eficiente, por ejemplo:</p>
 
-<h3>
-<a id="puntos-de-cortepointcut" class="anchor" href="#puntos-de-cortepointcut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>PUNTOS DE CORTE(Pointcut):</strong>
-</h3>
+<ol>
+<li>La Sincronización.</li>
+<li>La Distribución.</li>
+<li>El Manejo de Errores.</li>
+<li>La Optimización de Memoria.</li>
+<li>La Gestión de la Seguridad.</li>
+</ol>
 
-<p>Define los Consejos que se aplicarán a cada Punto de Cruce. Un pointcut es un <strong>predicado o condición para la aplicación de un aspecto.</strong></p>
+<p>Todos estos conceptos se encuentran diseminados por todo el código, a veces incluso implementados múltiples veces, por cada objeto o clase que necesite de las mismas. Un código normal, implementado con paradigmas actuales puede lucir de la siguiente manera:</p>
 
-<p><em>Se puede entender mas claramente en la siguiente imagen, donde el programa hace un llamado a un advice, el cual se definirá atravez de un pointcut, el cual tendrá diferentes joinpoints del cual podrá escoger uno o varios aspectos para ser ejecutados (Algo enredado, pero mas adelante se explica mejor esa diferenciación entre pointcut y joinpoint..)</em></p>
+<p><img src="https://raw.githubusercontent.com/anfmorenoso/Archivos/master/Cod.jpg" alt=""></p>
 
-<p><img src="https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/advice_pointcut.png?raw=true" alt=""></p>
-
-<hr>
-
-<p><em><strong>VAMOS CON EL EJEMPLO...</strong></em></p>
-
-<p><em>Cuando sales a comer a un restaurante, estando en él, miras el menú y hay varias opciones que se pueden escoger de platos fuertes, ensaladas, postres, etc. Después de ver que hay en el menú escoges uno o mas de estos platos, pero hasta que estos no sean ordenados y el mesero no te los traiga son solo "oportunidades para cenar".</em></p>
-
-<p><img src="https://github.com/japrietov/POA_teoria-1/blob/gh-pages/Images/example_restaurant.png?raw=true" alt=""></p>
-
-<p><em>Los <strong>joinpoints</strong> son las opciones que hay en el menu y los <strong>pointcuts</strong> son los platos que se ordenan. Hablando dentro del ámbito de la programación. Un <strong>joinpoint</strong> es una oportunidad dentro del código para la aplicación de un ASPECTO; una vez se toma esa oportunidad y se selecciona uno o mas joinpoints, al aplicar un ASPECTO de ellos se tendrá un <strong>pointcut</strong>.</em></p>
-
-<hr>
-
-<p><em>Pero bueno, a nosotros nos gusta ver como se verían todos estos conceptos aplicados ya en un programa. Supongamos que tenemos una tienda, la cual tendrá diferentes empleados. El administrador de la tienda va a tener todo el manejo de los empleados, incluyendo todas las operaciones CRUD (Create, Read, Update, Delete), hasta Como sera el inicio de sesión a la aplicación por parte de los empleados. Este inicio de sesión o Loggin sera el Aspecto que tendrá nuestra aplicación.</em></p>
-
-<p><em>La imagen a continuación explicara claramente donde estarían cada uno de los conceptos anteriormente mencionados dentro de un programa. Este programa fue implementado utilizando <strong>Spring AOP + AspectJ</strong>.</em></p>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/example_code.png?raw=true" alt=""></p>
-
-<p><em>Tal vez aun no quede claro estos conceptos mencionados anteriormente, pero en secciones posteriores encontraran mas ejemplos que ayudaran a entender mejor el paradigma de <strong>Programación Orientada a Aspectos</strong></em></p>
-
-<hr>
-
-<h3>
-<a id="introducciÓnintroduction" class="anchor" href="#introducci%C3%93nintroduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>INTRODUCCIÓN(Introduction):</strong>
-</h3>
-
-<p>Permite añadir métodos o atributos a clases ya existentes. Un ejemplo en el que resultaría útil es la creación de un Consejo de Auditoría que mantenga la fecha de la última modificación de un objeto, mediante una variable y un método setUltimaModificacion(fecha), que podrían ser introducidos en todas las clases (o sólo en algunas) para proporcionarles esta nueva funcionalidad. </p>
-
-<h3>
-<a id="destinatariotarget" class="anchor" href="#destinatariotarget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>DESTINATARIO(Target):</strong>
-</h3>
-
-<p>Es la clase aconsejada, la clase que es objeto de un consejo.</p>
-
-<h3>
-<a id="resultanteproxy" class="anchor" href="#resultanteproxy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>RESULTANTE(Proxy):</strong>
-</h3>
-
-<p>Es el objeto creado después de aplicar el Consejo al Objeto Destinatario.</p>
-
-<hr>
-
-<p><em>Estas definiciones de Target y proxy se entienden mejor en la siguiente imagen, donde claramente se ve que la clase aconsejada o Target es la clase <strong>FooService</strong> y el objeto creado Proxy despues de aplicar ese Concejo es <strong>FooServiceProxy</strong></em></p>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/proxy_target.png?raw=true" alt=""></p>
-
-<hr>
-
-<h3>
-<a id="tejedorweaving" class="anchor" href="#tejedorweaving" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>TEJEDOR(Weaving):</strong>
-</h3>
-
-<p>El tejedor se encarga de <strong>mezclar los diferentes mecanismos de abstracción y composición</strong> que aparecen en los lenguajes de aspectos y componentes ayudándose de los puntos de enlace.</p>
-
-<p>Este proceso puede ocurrir a lo largo del ciclo de vida del programa:</p>
+<p>La no separación de los conceptos transversales en la programación ocasiona distintos tipos de problemas como pueden ser:</p>
 
 <ul>
-<li>Aspectos en Tiempo de Compilación.</li>
-<li>Aspectos en Tiempo de Carga, los Aspectos se implementan cuando el Objeto Destinatario es cargado.</li>
-<li>Aspectos en Tiempo de Ejecución.</li>
+<li>Baja correspondencia: La implementación simultánea de varios conceptos oscurece la correspondencia entre un concepto y su implementación.</li>
+<li>Baja productividad: Al intentar implementar varios conceptos en un mismo módulo existe la posibilidad de que el desarrollador pierda el rumbo del concepto principal por concentrarse en conceptos periféricos.</li>
+<li>Baja reusabilidad: Al tener en un mismo módulo implementados varios conceptos, resulta en un código poco reusable.</li>
+<li>Baja calidad de código: El código con múltiples conceptos entrelazados en un mismo módulo produce un código propenso a errores, por otro lado, al tener como objetivo demasiados varios conceptos es posible que se haga una mejor o peor implementación de los mismos por considerarlos más o menos importantes.</li>
+<li>Evolución más dificultosa: Con una implementación que no esté completamente modularizada los futuros cambios en un requerimiento implican revisar y modificar cada uno de los módulos donde esté presente ese requerimiento.</li>
 </ul>
-
-<p><em>Este concepto de Tejedor es muy importante dentro de la Programación Orientada a Aspectos, este es el que nos va a mezclar el <strong>Programa de componentes</strong> descrito por un Lenguaje base, y  los diferentes <strong>Programas de Aspectos</strong>, cada uno descrito por su propio Lenguaje de aspectos</em></p>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/Tejedor.png?raw=true" alt=""></p>
-
-<hr>
-
-<p>VIENDO TODOS ESTOS CONCEPTOS ANTERIORMENTE MENCIONADOS, SE PUEDE PUEDE VER LA DIFERENCIA EN LA ESTRUCTURA DE LA IMPLEMENTACIÓN ENTRE <strong>LOS LENGUAJES TRADICIONALES</strong> Y <strong>LOS LENGUAJES DE ASPECTOS</strong></p>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/Diferencia_tradicional_aspectos.png?raw=true" alt=""></p>
-
-<p>COMO SE VE, EL CONCEPTO DEL <em>TEJEDOR</em> SE VUELVE FUNDAMENTAL EN LA PROGRAMACIÓN ORIENTADA A ASPECTOS. ADEMÁS QUE LA IMPLEMENTACIÓN DEJA DE SER UNA IMPLEMENTACIÓN SECUENCIAL Y PASA A SER UNA IMPLEMENTACIÓN MODULARIZADA.</p>
-
-<hr>
-
-<h2>
-<a id="ventajas-y-desventajas" class="anchor" href="#ventajas-y-desventajas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VENTAJAS Y DESVENTAJAS</h2>
-
-<h3>
-<a id="ventajas" class="anchor" href="#ventajas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>VENTAJAS</strong>
-</h3>
-
-<ul>
-<li>Ayuda a superar los problemas causados por: <strong>Código Mezclado(Code Tangling)</strong> y <strong>Código Diseminado(Code Scattering)</strong>
-</li>
-</ul>
-
-<hr>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/scattering_tangling.png?raw=true" alt=""></p>
-
-<p><em>Se entiende como <strong>Código Mezclado</strong> como en un mismo módulo de un sistema de software puedan simultáneamente convivir más de un requerimiento. Esta múltiple existencia de requerimientos lleva a la presencia conjunta de elementos de implementación de más de un requerimiento, resultando en un Código Mezclado.</em></p>
-
-<p><em>El <strong>Código Diseminado</strong> se refiere a como los requerimientos están esparcidos sobre varios módulos, la implementación resultante también queda diseminada sobre esos módulos.</em></p>
-
-<hr>
-
-<ul>
-<li><p><strong>Implementación modularizada:</strong> POA logra separar cada concepto con mínimo acoplamiento, resultando en implementaciones  modularizadas aún en la presencia de conceptos que se entrecruzan. Esto lleva a un código más limpio, menos duplicado, más fácil de entender y de mantener.</p></li>
-<li><p><strong>Mayor evolucionabilidad:</strong> La separación de conceptos permite agregar nuevos aspectos, modificar y / o remover aspectos existentes fácilmente.</p></li>
-</ul>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/evolucion-social.jpg?raw=true" alt=""></p>
-
-<ul>
-<li><p><strong>Capacidad de retrasar las decisiones de diseño:</strong> para requerimientos actuales o que surjan en el futuro, permite, luego, <em>implementarlos separadamente, e incluirlos automáticamente en el sistema.</em></p></li>
-<li><p><strong>Resuelve el dilema del arquitecto:</strong> ¿Cuántos recursos invertir en el diseño? ¿Cuándo es “demasiado diseño”?</p></li>
-<li><p><strong>Mayor reusabilidad:</strong> Al ser implementados separadamente, tiene mayor probabilidades de ser reusados en otros sistemas con requerimientos similares. </p></li>
-</ul>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/code_reusability.jpg?raw=true" alt=""></p>
-
-<ul>
-<li><p><strong>Divide y vencerás:</strong> Al separar la funcionalidad básica de los aspectos, se aplica con mayor intensidad el principio de dividir y conquistar.</p></li>
-<li><p><strong>N-dimensiones:</strong> Ahora se tiene la posibilidad de implementar el sistema con las dimensiones que sean necesarias, no una única dimensión ”sobrecargada”.</p></li>
-<li><p><strong>Mínimo acoplamiento y máxima cohesión:</strong> Se genera una mejor implementación de un sistema si realizamos cada una de sus partes por separado y los unimos de una manera estrecha en donde estas partes, en este caso los aspectos interactúen adecuadamente.</p></li>
-</ul>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/minimo_acoplamiento_maxima_cohesion.png?raw=true" alt=""></p>
-
-<h3>
-<a id="desventajas" class="anchor" href="#desventajas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>DESVENTAJAS</strong>
-</h3>
-
-<ul>
-<li><p><strong>Posibles choques entre el código funcional (expresado en el lenguaje componente) y el código de aspectos (expresados en los lenguajes de aspectos):</strong> Usualmente estos choques nacen de la necesidad de violar el encapsulamiento para implementar los diferentes aspectos, sabiendo de antemano el riesgo potencial que se corre al utilizar estas prácticas.</p></li>
-<li><p><strong>Posibles choques entre los aspectos:</strong> El ejemplo clásico es tener dos aspectos que trabajan perfectamente por separado pero al aplicarlos conjuntamente resultan en un comportamiento anormal. </p></li>
-</ul>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/choque.png?raw=true" alt=""></p>
-
-<ul>
-<li>
-<strong>Posibles choques entre el código de aspectos y los mecanismos del lenguaje:</strong> Uno de los ejemplos más conocidos de este problema es la anomalía de herencia. Dentro del contexto de la POA, el término puede ser usado para indicar la dificultad de heredar el código de un aspecto en la presencia de herencia.</li>
-</ul>
-
-<p><img src="https://github.com/ProgramacionOrientadaAspectos/POA_teoria/blob/gh-pages/Images/herencia.png?raw=true" alt=""></p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/ProgramacionOrientadaAspectos/POA_teoria">Programacion Orientada a Aspectos</a> is maintained by <a href="https://github.com/ProgramacionOrientadaAspectos">ProgramacionOrientadaAspectos</a>.</span>
-
-        <span class="site-footer-credits">This page was created by Jenny Sánchez Cruz, Felipe Moreno y Jeisson Prieto.</span>
-      </footer>
 
     </section>
 
