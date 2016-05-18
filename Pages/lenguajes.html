@@ -127,32 +127,32 @@
     <h2>
         <a id="AspectC" class="anchor" href="#AspectC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AspectC</h2>
     <p>
-        AspectC es un simple lenguaje de aspectos de propósito general que extiende C, es un subconjunto de
-        AspectJ sin ningún soporte para la programación orientada a objetos o módulos explícitos.
-        El código de aspectos, conocido como aviso, interactúa con la funcionalidad básica en los límites
+        AspectC es un lenguaje de aspectos de propósito general que extiende C, es un subconjunto de
+        AspectJ <strong>sin ningún soporte para la programación orientada a objetos o módulos explícitos</strong>.
+        El código de aspectos, conocido como <strong>aviso</strong>, interactúa con la funcionalidad básica en los límites
         de una llamada a una función, y puede ejecutarse antes, después, o durante dicha llamada. Los elementos
         centrales del lenguaje tienen como objetivo señalar llamadas de funciones particulares, acceder a los
         parámetros de dichas llamadas, y adherir avisos a ellas.</p>
     <p>
-        Los cortes en AspectC tomas las siguientes formas:
+        Los <strong>puntos de corte</strong> en AspectC toman las siguientes formas:
     <ul>
-        <li>Llamadas a una función: call(f(arg)), captura todas las llamadas a la
+        <li><strong>Llamadas a una función</strong>: call(f(arg)), captura todas las llamadas a la
             función f con un argumento.</li>
         <li>
-            Durante el flujo de control: cflow(cualquier corte), captura el
+            <strong>Durante el flujo de control</strong>: cflow(cualquier corte), captura el
             contexto de ejecución dinámico del corte.
         </li>
         <li>
-            Referencias a una variable: varref(nombre_variable), captura las
+            <strong>Referencias a una variable</strong>: varref(nombre_variable), captura las
             referencias a la variable nombre_variable.
         </li>
-        <li>
-            Todos los cortes se pueden describir utilizando expresiones lógicas,
-            aumentando la expresividad del lenguaje: el operador “y”(&&), el operador “o” (||), y el
-            operador de negación(!). Un ejemplo sería: call(f(arg)) || call(h(arg)), con lo cual se captura las l
-            lamadas a la función f o las llamadas a la función g.
-        </li>
     </ul>
+
+        Todos los cortes se pueden describir utilizando expresiones lógicas,
+        aumentando la expresividad del lenguaje: el operador “y”(&&), el operador “o” (||), y el
+        operador de negación(!). Un ejemplo sería: call(f(arg)) || call(h(arg)), con lo cual se captura las l
+        lamadas a la función f o las llamadas a la función g.
+
     </p>
     <p>
         Como el lenguaje C es de naturaleza estática, el tejedor de AspectC es estático.
